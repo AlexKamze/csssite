@@ -46,3 +46,8 @@ img {
   .topnav a.active {
     color: white;
   }
+
+  #prices {
+    color: #790e59;
+  
+  }
