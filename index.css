@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+    background-color: rgb(5, 5, 5);
+    color:white;
+    font-family: 'Abril Fatface', cursive;
+    margin: 0;
+    margin-left: 50px;
+    font-size:40px;
+}
+
+img {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 600px;
+    height: 600px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    position: relative;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: rgb(48, 44, 48);
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
